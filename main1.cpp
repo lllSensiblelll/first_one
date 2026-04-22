@@ -4,4 +4,8 @@ int main() {
     std::cout << "Hello, World!";
     return 0;
 }
-#include <>
+#include <iostream> "and take THIS!!!"
+int f()
+{
+    std::cin << 
+}
