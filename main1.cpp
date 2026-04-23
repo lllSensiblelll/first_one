@@ -5,7 +5,3 @@ int main() {
     return 0;
 }
 #include <iostream> "and take THIS!!!"
-int f()
-{
-    std::cin << 
-}
