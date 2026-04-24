@@ -1,7 +1,7 @@
 #include <iostream>
-
+using namespace std;
 int main() {
-    std::cout << "Hello, World!\n";
+    cout << "Hello, World!\n" << endl;  
     system("pause");
     return 0;
 }
