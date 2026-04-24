@@ -4,12 +4,8 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++",
-            "args": [
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe"
-            ]
+            "command": "g++ ${file} -g -o ${fileDirname}/${fileBasenameNoExtension}.exe; .\\${fileBasenameNoExtension}.exe",
+            "problemMatcher": ["$gcc"]
         }
     ]
 }
