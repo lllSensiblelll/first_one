@@ -3,5 +3,6 @@ using namespace std;
 int main() {
     cout << "Hello, World!\n" << endl;  
     system("pause");
-    return 0;
+    cout << 
+     "added c_cpp_properties.json in old computer";
 }
