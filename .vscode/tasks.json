@@ -4,8 +4,18 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++ ${file} -g -o ${fileDirname}/${fileBasenameNoExtension}.exe; .\\${fileBasenameNoExtension}.exe",
-            "problemMatcher": ["$gcc"]
+            "command": "powershell -Command \"& 'D:\\Microsoft\\Microsoft Visual Studio\\18\\Build Tools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe' /EHsc /Fe${workspaceFolder}\\main1.exe main1.cpp ; Remove-Item main1.obj\"",
+            "options": {
+                "env": {
+                    "INCLUDE": "D:\\Microsoft\\Microsoft Visual Studio\\18\\Build Tools\\VC\\Tools\\MSVC\\14.50.35717\\include;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\shared",
+                    "LIB": "D:\\Microsoft\\Microsoft Visual Studio\\18\\Build Tools\\VC\\Tools\\MSVC\\14.50.35717\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\um\\x64"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
         }
     ]
 }

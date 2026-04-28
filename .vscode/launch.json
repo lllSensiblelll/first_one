@@ -3,16 +3,14 @@
     "configurations": [
         {
             "name": "C++ Run",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}/main1.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "D:/mingw32/bin/gdb.exe",
             "preLaunchTask": "build"
         }
     ]
